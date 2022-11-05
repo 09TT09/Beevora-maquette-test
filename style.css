@@ -1,0 +1,461 @@
+/*____ FONTS ____*/
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('./fonts/Roboto-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Bebas Neue';
+    src: url('./fonts/BebasNeue-Regular.ttf') format('truetype');
+}
+
+body{
+    margin: 0;
+    padding: 0 0 70px 0;
+    font-family: 'Roboto';
+    font-style: normal;
+    background-color: #DDDEE5;
+    min-height: 100vh;
+    min-height: 100%;
+}
+
+/*____ HEADER ____*/
+
+header{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    background-color: #030010;
+    height: 98px;
+    width: 100%;
+}
+
+.header_inline{
+    display: inline;
+}
+
+.div_header_profil, .div_beevora_logo, .div_filters_token{
+    flex: 1;  
+    display: flex;
+    align-items: center;
+    margin-bottom: 14px
+}
+.div_header_profil{ justify-content: left; }
+.div_beevora_logo{ justify-content: center; }
+.div_filters_token{ justify-content: right; }
+
+.header_profil{
+    margin-left: 12px;
+}
+
+.beevora_token_img{
+    margin: 0 12px 0 12px;
+}
+
+/*____ BANNERS ____*/
+
+.banner, .banner_2{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 45px;
+}
+
+.banner_color{
+    background: linear-gradient(94.23deg, #593AC6 4.85%, #1A0857 100.26%);
+}
+
+.banner_div{
+    display: flex;
+    align-items: center;
+}
+
+.banner_left{
+    width: 100%;
+    height: 100%;
+    color: white;
+}
+
+.bet_profil_picture{
+    margin: 0 16px 0 16px;
+}
+
+.banner_text p:first-child{
+    display: inline-block;
+    font-size: 14px;
+}
+
+.banner_text p{
+    margin: 0;
+    font-size: 10px;
+    font-weight: 400;
+}
+
+.banner_text div{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 27px;
+    height: 16px;
+    background-color: rgba(255, 255, 255, 0.12);
+    border-radius: 4px;
+    margin: 0 4px 0 4px;
+    font-size: 10px;
+    font-weight: 700;
+}
+
+.banner_right{
+    display: flex;
+    justify-content: flex-end;
+    width: 45px;
+    height: 100%;
+}
+
+.bet_menu{
+    margin: 0 16px 0 16px;
+}
+
+.banner_2{
+    position: relative;
+}
+
+.banner_left_2{
+    position: absolute;
+    left:0;
+    width: calc(60% - 2px);
+    height: 100%;
+    background-color: crimson;
+    clip-path: polygon(0 0, calc(100% - 20px) 0%, 100% 100%, 0% 100%);
+    background: linear-gradient(94.23deg, #593AC6 4.85%, #1A0857 100.26%);
+    color: white;
+}
+
+.banner_win{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: calc(60% - 20px);
+    width: 30%;
+    height: 100%;
+    background-color: #0CC48B;
+    clip-path: polygon(0 0, calc(100% - 20px) 0%, 100% 100%, calc(0% + 20px) 100%);
+}
+
+.banner_win_text{
+    font-weight: 500;
+    font-size: 14px;
+    color: white;
+}
+
+.banner_win_text span{
+    font-weight: 400;
+    font-size: 12px;
+}
+
+.banner_right_2{
+    position: absolute;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    right: 0;
+    width: calc(10% + 38px);
+    height: 100%;
+    clip-path: polygon(0 0, 100% 0%, 100% 100%, calc(0% + 20px) 100%);
+    background: linear-gradient(-94.23deg, #593AC6 4.85%, #1A0857 100.26%);
+}
+
+.bet_menu_icon_2{
+    margin-right: 15px;
+}
+
+/*____ BET ____*/
+
+.bet{
+    padding: 0 16px 0 16px;
+}
+
+/*____ TRUST/ODDS ____*/
+
+.trust_odds{
+    display: flex;
+    width: 100%;
+}
+
+.trust_odds_div{
+    width: 50%;
+}
+
+.trust_odds_div p{
+    color: #757087;
+    font-weight: 500;
+    font-size: 10px;
+}
+
+.trust_odds p{
+    margin-bottom: 2px;
+}
+
+.trust_odds_left div div{
+    display: inline-block;
+    vertical-align: middle;
+    height: 27px;
+    margin: 0 6px 0 6px;
+    font-family: 'Bebas Neue';
+    color: #301F6B;
+}
+
+.trust_odds_left progress{
+    width: 120px;
+    height: 27px;
+    border-radius: 4px;
+    color: #301F6B;
+}
+progress::-moz-progress-bar {
+    background: #301F6B;
+    border-radius: 4px;
+}
+progress::-webkit-progress-bar {
+    background: rgba(48, 31, 107, 0.2);
+    border-radius: 4px;
+}
+progress::-webkit-progress-value {
+    background: #301F6B;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+
+.validate{
+    margin: 0 7px 0 7px;
+}
+
+.trust_odds_right_flex{
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    align-items: center;
+}
+
+.combined_odds{
+    margin-left: 30px;
+}
+
+.best_bet{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    height: 27px;
+    width: 146px;
+    border-radius: 4px;
+}
+
+.best_bet_image{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 100%;
+    background-color: #DDDEE5;
+}
+
+.best_bet_value{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background-color: #EEEFF2;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+
+.best_bet_icon{
+    background: #EEEFF2;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+/*____ BET INFOS ____*/
+
+.bet_infos{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    min-height: 272px;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 14px;
+    margin-top: 12px;
+}
+
+.bet_infos_div{
+    width: 90%;
+}
+
+.unique_bet{
+    margin-bottom: 18px;
+}
+
+.unique_bet:nth-last-child(-n+2){
+    margin-bottom: 5px;
+}
+
+.bet_title{
+    font-weight: 700;
+    font-size: 12px;
+    margin: 11px 0 0 0;
+}
+
+.bet_sub_title{
+    font-size: 10px;
+    margin: 4px 0 0 0;
+
+    color: #757087;
+}
+
+.bet_date{
+    float: right
+}
+
+.bet_text_div{
+    display: inline-block;
+    width: 50%;
+}
+
+.bet_text{
+    font-size: 10px;
+    margin: 6px 0 1px 0;
+}
+
+.bet_text_info{
+    font-weight: 500;
+    font-size: 12px;
+    margin: 0;
+}
+
+.odds_div{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    float: right;
+    margin: 6px 0 0 0;
+    width: 80px;
+    height: 25px;
+    background-color: #DDDEE5;
+    border-radius: 2px;
+}
+
+.odds_value{
+    width: 100%;
+    text-align: center;
+    font-weight: 500;
+    font-size: 12px;
+}
+
+.green{color: #11D095;}
+.red{color: #E52C41;}
+
+.see_more{
+    font-weight: 500;
+    font-size: 12px;
+    color: #0A012A;
+}
+
+/*____ COMMUNICATE ____*/
+
+.communicate{
+    display: flex;
+    width: 100%;
+    height: 50px;
+}
+
+.div_communicate{
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+.communicate_left p, .communicate_right p{
+    margin: 0 16px 0 6px;
+    font-size: 12px;
+}
+
+.communicate_right p{
+    margin: 0 4px 0 6px;
+}
+
+.communicate_left, .communicate_right{
+    flex: 1;  
+    display: flex;
+}
+.communicate_left{ justify-content: left; }
+.communicate_right{ justify-content: right; }
+
+/*____ NAVIGATION ____*/
+
+.navigation{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 70px;
+    background-color: #0A012A;
+    box-shadow: 0px -4px 11px rgba(10, 1, 42, 0.03);
+    color: rgba(255, 255, 255, 0.5);
+    font-weight: 500;
+    font-size: 10px;
+}
+
+.navigation_flex{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+
+.navigation_button{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.navigation_button p{
+    margin: 5px 0 0 0;
+}
+
+.active{color: #FFFFFF}
+
+/* BUTTON FIXED */
+
+.button_fixed{
+    position: fixed;
+    bottom: 12.5%;
+    right: 6%;
+    width: 68px;
+    height: 68px;
+    border-radius: 50%;
+    background-color: #593AC6;
+    border: 0;
+    font-weight: 700;
+    font-size: 20px;
+    color: white;
+    box-shadow: 0px 4px 12px rgba(10, 1, 42, 0.3);
+}
+
+.button_alert{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #FFEB00;
+    color: black;
+    font-size: 12px;
+}
