@@ -211,17 +211,20 @@ header{
     height: 27px;
     border-radius: 4px;
     color: #301F6B;
+    background: rgba(48, 31, 107, 0.2);
+    border: 0;
 }
 progress::-moz-progress-bar {
-    background: #301F6B;
-    border-radius: 4px;
+    background-color: #301F6B;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
 }
 progress::-webkit-progress-bar {
-    background: rgba(48, 31, 107, 0.2);
     border-radius: 4px;
+    background-color: transparent
 }
 progress::-webkit-progress-value {
-    background: #301F6B;
+    background-color: #301F6B;
     border-top-left-radius: 4px;
     border-bottom-left-radius: 4px;
 }
